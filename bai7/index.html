@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+<h1>Tính tiền phòng khách sạn.</h1>
+<table>
+    <tr>
+        <th>Chọn kiểu phòng :</th>
+        <td><select id="loai" style="width:145px">
+            <option value="500000">A : 500.000 vnđ</option>
+            <option value="450000">B : 450.000 vnđ</option>
+            <option value="350000">C : 350.000 vnđ</option>
+            </select></td>
+    </tr>
+    <tr>
+        <th>Ngày Check-in :</th>
+        <th><input type="date" id = "day1"></th>
+    </tr>
+    <tr>
+        <th>Ngày Check-out :</th>
+        <th><input type="date" id = "day2"></th>
+    </tr>
+    <tr>
+        <th><button onclick="tinh()">Thành tiền</button></th>
+        <th><h2 id="tien"></h2></th>
+    </tr>
+</table>
+
+</body>
+<script src="bill.js"></script>
+</html>
